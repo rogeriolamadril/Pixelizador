@@ -6,7 +6,6 @@
     <title>Pixelizador de Imagens</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Link para o nosso arquivo de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-100">
@@ -27,7 +26,6 @@
                         <input type="file" id="imageUpload" accept="image/*" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"/>
                     </div>
 
-                    <!-- Sliders de controle -->
                     <div>
                         <label for="pixelSize" class="block text-sm font-medium text-gray-700">2. Nível de Detalhe</label>
                         <div class="flex items-center space-x-3">
@@ -61,15 +59,15 @@
                     <div class="flex justify-center items-center bg-slate-100 p-4 rounded-lg mb-6 overflow-auto">
                         <canvas id="outputCanvas" class="border border-gray-300 shadow-md max-w-full h-auto"></canvas>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Paleta de Cores</h3>
+                    <!-- Título da paleta atualizado -->
+                    <h3 class="text-xl font-semibold mb-3">Paleta de Cores e Contagem de Pontos</h3>
                     <div id="paletteContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                        <!-- A paleta de cores será inserida aqui -->
+                        <!-- A paleta de cores será inserida aqui pelo JavaScript -->
                     </div>
                 </div>
                 <div id="placeholder" class="text-center py-20 text-slate-500">
                     <p>Envie uma imagem e ajuste as configurações para começar.</p>
                 </div>
-                <!-- Loader para feedback de processamento -->
                 <div id="loader" class="hidden justify-center items-center py-20">
                     <div class="loader"></div>
                     <p class="ml-4 text-slate-600">Processando, isso pode levar um momento...</p>

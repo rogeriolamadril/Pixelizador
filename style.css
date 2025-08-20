@@ -1,4 +1,4 @@
-/* style.css (v0.3) */
+/* style.css (v0.4) */
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -18,7 +18,7 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Estilos para deixar os sliders mais bonitos */
+/* Estilos para os sliders */
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
@@ -41,7 +41,7 @@ input[type=range]::-webkit-slider-thumb {
     background: #3b82f6;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -6px; /* Ajuste pra centralizar o thumb na track */
+    margin-top: -6px;
 }
 input[type=range]::-moz-range-track {
     width: 100%;
